@@ -1,0 +1,17 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /tmp/tmp.p9xBRMXiiq
+-- The CXX compiler identification is GNU 4.8.5
+-- Check for working CXX compiler: /usr/bin/g++
+-- Check for working CXX compiler: /usr/bin/g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_C_COMPILER
+
+
+-- Build files have been written to: /tmp/tmp.p9xBRMXiiq/cmake-build-debug

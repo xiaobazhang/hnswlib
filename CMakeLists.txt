@@ -16,12 +16,15 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
       SET( CMAKE_CXX_FLAGS  "-Ofast -lrt -DNDEBUG -std=c++11 -DHAVE_CXX0X -openmp -march=native -fpic -w -fopenmp -ftree-vectorize" )
     endif()
 
-    add_executable(test_updates examples/updates_test.cpp)
-    target_link_libraries(test_updates hnswlib)
+    # add_executable(test_updates examples/updates_test.cpp)
+    # target_link_libraries(test_updates hnswlib)
 
-    add_executable(searchKnnCloserFirst_test examples/searchKnnCloserFirst_test.cpp)
-    target_link_libraries(searchKnnCloserFirst_test hnswlib)
+    # add_executable(searchKnnCloserFirst_test examples/searchKnnCloserFirst_test.cpp)
+    # target_link_libraries(searchKnnCloserFirst_test hnswlib)
 
-    add_executable(main main.cpp sift_1b.cpp)
-    target_link_libraries(main hnswlib)
+    # add_executable(main main.cpp sift_1b.cpp)
+    # target_link_libraries(main hnswlib)
+
+    add_executable(embedding hnsw_test.cpp)
+    target_link_libraries(embedding hnswlib)
 endif()
